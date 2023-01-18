@@ -10,7 +10,7 @@ const PORT = 3030;
 
 createServer(async (request, response) => {
   const headers = {
-    'Access-Control-Allow_Origin': '*',
+    'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow_Methods': '*',
   };
 
@@ -43,7 +43,7 @@ createServer(async (request, response) => {
     .pipeTo(
       new WritableStream({
         async write(chunk) {
-          await setTimeout(1000);
+          await setTimeout(200);
           items++;
           response.write(chunk);
         },

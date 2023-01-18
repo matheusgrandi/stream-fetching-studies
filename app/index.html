@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Stream Fetching</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-gap: 1.25rem;
+      align-items: stretch;
+    }
+
+    .grid > article {
+      border: 1px solid #ccc;
+    }
+
+    .grio .text {
+      padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    }
+
+  </style>
+</head>
+<body>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+  <div class="conteiner">
+    <main id="cards" class="grid">
+  
+    </main>
+  </div>
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
